@@ -1,5 +1,3 @@
 #!/bin/bash
 
-./build
-docker build -t hashicorp/vault-example-init:0.0.1 .
-rm vault-init
+docker build -t gcr.io/vault-agent-kubernetes-testing/vault-example-init:0.0.1 .

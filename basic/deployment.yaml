@@ -12,8 +12,8 @@ spec:
       serviceAccountName: vault-auth
       containers:
         - name: app 
-          image: "hashicorp/vault-example-init:0.0.1"
-          imagePullPolicy: IfNotPresent
+          image: "gcr.io/vault-agent-kubernetes-testing/vault-example-init:0.0.1"
+          imagePullPolicy: Always
           env:
             - name: VAULT_ADDR
-              value: "http://10.0.2.2:8200"
+              value: "http://10.4.1.22:8200"
